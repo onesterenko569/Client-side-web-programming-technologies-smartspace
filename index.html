@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSpace | Лабораторна робота 2</title>
+</head>
+<body>
+
+    <header id="top-header" class="site-header">
+        <p><strong>SmartSpace</strong></p>
+    </header>
+
+    <nav aria-label="Головна навігація" class="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#catalog-list">Каталог гаджетів</a></li>
+            <li class="nav-item"><a href="#about">Про нас</a></li>
+            <li class="nav-item"><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <form id="search-form" class="search-form" action="/search">
+        <label for="search-input">Пошук пристрою:</label>
+        <input type="search" id="search-input" class="search-input" name="q" placeholder="Пошук...">
+        <button type="submit" class="btn btn-search">Знайти</button>
+    </form>
+
+    <hr>
+
+    <main class="main-content">
+        <h1 class="page-title">Каталог сучасної техніки</h1>
+
+        <aside class="promo-info">
+            <h2>Інформація для покупців</h2>
+            <p>На всі пристрої діє офіційна гарантія 12 місяців. Безкоштовна доставка по Україні при замовленні від 10 000 ₴.</p>
+        </aside>
+
+        <section id="filters" class="filters-section" aria-labelledby="filters-title">
+            <h2 id="filters-title">Фільтри</h2>
+            
+            <form action="/filter" class="filters-form">
+                <p><strong>Категорія:</strong></p>
+                <ul class="category-list">
+                    <li><label><input type="radio" name="category" value="all" checked> Всі пристрої</label></li>
+                    <li><label><input type="radio" name="category" value="phone"> Смартфони</label></li>
+                    <li><label><input type="radio" name="category" value="laptop"> Ноутбуки</label></li>
+                    <li><label><input type="radio" name="category" value="audio"> Навушники</label></li>
+                </ul>
+                
+                <label for="sort-select">Сортувати за:</label>
+                <select id="sort-select" class="sort-select" name="sort">
+                    <option value="name">За назвою</option>
+                    <option value="price_asc">Від дешевих до дорогих</option>
+                    <option value="price_desc">Від дорогих до дешевих</option>
+                </select>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="catalog-list" class="catalog-section" aria-labelledby="catalog-title">
+            <h2 id="catalog-title">Асортимент SmartSpace</h2>
+            
+            <ul class="products-grid">
+                <li class="product-item">
+                    <article class="product-card">
+                        <h3 class="product-title">Смартфон Apple iPhone 18 Pro 1TB</h3>
+                        <img class="product-image"
+                             src="images/iphone18_small.jpg" 
+                             srcset="images/iphone18_small.jpg 400w, images/iphone18_large.jpg 800w" 
+                             sizes="(max-width: 600px) 100vw, 25vw"
+                             alt="Смартфон iPhone 18 Pro у новому корпусі" 
+                             title="Apple iPhone 18 Pro"
+                             fetchpriority="high">
+                        
+                        <p class="product-category"><strong>Категорія:</strong> Телефон</p>
+                        <p class="product-price"><strong>Ціна:</strong> <data value="117999">117 999 ₴</data></p>
+                        <p class="product-year"><strong>Рік випуску:</strong> <time datetime="2026-09-15">2026</time></p>
+                        <p class="product-status"><strong>Наявність:</strong> Так (В наявності)</p>
+                        <p class="product-specs"><strong>Ключові характеристики:</strong> чип A20 Pro, OLED-дисплей без вирізів, 12GB RAM, 1TB пам'яті.</p>
+                        <p class="product-desc"><strong>Опис:</strong> Найтехнологічніший флагман Apple з революційною камерою та розширеним штучним інтелектом.</p>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+                        <h3 class="product-title">Ноутбук Lenovo Legion Pro 5 16ARX8</h3>
+                        <img class="product-image"
+                             src="images/lenovo_small.jpg" 
+                             srcset="images/lenovo_small.jpg 400w, images/lenovo_large.jpg 800w" 
+                             sizes="(max-width: 600px) 100vw, 25vw"
+                             alt="Ігровий ноутбук Lenovo Legion Pro 5" 
+                             title="Lenovo Legion Pro 5"
+                             loading="lazy">
+                        
+                        <p class="product-category"><strong>Категорія:</strong> Ноутбук</p>
+                        <p class="product-price"><strong>Ціна:</strong> <data value="94500">94 500 ₴</data></p>
+                        <p class="product-year"><strong>Рік випуску:</strong> <time datetime="2025-04-10">2025</time></p>
+                        <p class="product-status"><strong>Наявність:</strong> Ні (Очікується)</p>
+                        <p class="product-specs"><strong>Ключові характеристики:</strong> AMD Ryzen 7 7745HX, RTX 4070, 32GB DDR5, 1TB SSD, екран 16" 240Hz.</p>
+                        <p class="product-desc"><strong>Опис:</strong> Потужний ігровий ноутбук з передовою системою охолодження Coldfront 5.0.</p>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+                        <h3 class="product-title">Бездротові навушники JBL Tune 770NC Black</h3>
+                        <img class="product-image"
+                             src="images/jbl_small.jpg" 
+                             srcset="images/jbl_small.jpg 400w, images/jbl_large.jpg 800w" 
+                             sizes="(max-width: 600px) 100vw, 25vw"
+                             alt="Чорні навушники JBL Tune 770NC" 
+                             title="JBL Tune 770NC Black"
+                             loading="lazy">
+                        
+                        <p class="product-category"><strong>Категорія:</strong> Навушники</p>
+                        <p class="product-price"><strong>Ціна:</strong> <data value="3999">3 999 ₴</data></p>
+                        <p class="product-year"><strong>Рік випуску:</strong> <time datetime="2024-03-20">2024</time></p>
+                        <p class="product-status"><strong>Наявність:</strong> Так (В наявності)</p>
+                        <p class="product-specs"><strong>Ключові характеристики:</strong> Bluetooth 5.3, активне шумозаглушення (ANC), до 70 годин роботи.</p>
+                        <p class="product-desc"><strong>Опис:</strong> Зручні повнорозмірні навушники з глибоким фірмовим звучанням JBL Pure Bass.</p>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+                        <h3 class="product-title">Смарт-годинник Apple Watch Ultra 3 Black Titanium</h3>
+                        <img class="product-image"
+                             src="images/watch_ultra_small.jpg" 
+                             srcset="images/watch_ultra_small.jpg 400w, images/watch_ultra_large.jpg 800w" 
+                             sizes="(max-width: 600px) 100vw, 25vw"
+                             alt="Годинник Apple Watch Ultra 3 у чорному титані" 
+                             title="Apple Watch Ultra 3 Black Titanium"
+                             loading="lazy">
+                        
+                        <p class="product-category"><strong>Категорія:</strong> Годинник</p>
+                        <p class="product-price"><strong>Ціна:</strong> <data value="26900">26 900 ₴</data></p>
+                        <p class="product-year"><strong>Рік випуску:</strong> <time datetime="2026-09-15">2026</time></p>
+                        <p class="product-status"><strong>Наявність:</strong> Так (В наявності)</p>
+                        <p class="product-specs"><strong>Ключові характеристики:</strong> Чорний титановий корпус, екран 3000 ніт, двочастотний GPS.</p>
+                        <p class="product-desc"><strong>Опис:</strong> Смарт-годинник для екстремалів із розширеною автономністю та міцним корпусом.</p>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+                        <h3 class="product-title">Планшет Samsung Galaxy Tab S11 5G 12/256GB Gray</h3>
+                        <img class="product-image"
+                             src="images/tab_s11_small.jpg" 
+                             srcset="images/tab_s11_small.jpg 400w, images/tab_s11_large.jpg 800w" 
+                            sizes="(max-width: 600px) 100vw, 25vw"
+                             alt="Планшет Samsung Galaxy Tab S11 5G Gray" 
+                             title="Samsung Galaxy Tab S11 5G"
+                             loading="lazy">
+                        
+                        <p class="product-category"><strong>Категорія:</strong> Планшет</p>
+                        <p class="product-price"><strong>Ціна:</strong> <data value="52999">52 999 ₴</data></p>
+                        <p class="product-year"><strong>Рік випуску:</strong> <time datetime="2026-02-05">2026</time></p>
+                        <p class="product-status"><strong>Наявність:</strong> Так (В наявності)</p>
+                        <p class="product-specs"><strong>Ключові характеристики:</strong> Підтримка 5G, 12GB RAM, 256GB пам'яті, стилус S Pen, Dynamic AMOLED 2X.</p>
+                        <p class="product-desc"><strong>Опис:</strong> Преміальний планшет для роботи та творчості.</p>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+                        <h3 class="product-title">Електронна книга Kindle Paperwhite</h3>
+                        <img class="product-image"
+                             src="images/kindle_small.jpg" 
+                             srcset="images/kindle_small.jpg 400w, images/kindle_large.jpg 800w" 
+                             sizes="(max-width: 600px) 100vw, 25vw" 
+                             alt="Читалка Kindle Paperwhite на світлому фоні" 
+                             title="Amazon Kindle Paperwhite"
+                             loading="lazy">
+                        
+                        <p class="product-category"><strong>Категорія:</strong> Електронна книга</p>
+                        <p class="product-price"><strong>Ціна:</strong> <data value="11999">11 999 ₴</data></p>
+                        <p class="product-year"><strong>Рік випуску:</strong> <time datetime="2021-10-27">2021</time></p>
+                        <p class="product-status"><strong>Наявність:</strong> Ні (Очікується)</p>
+                        <p class="product-specs"><strong>Ключові характеристики:</strong> 6.8" E-Ink, підсвічування з регулюванням температури.</p>
+                        <p class="product-desc"><strong>Опис:</strong> Компактна електронна книга з екраном, що не шкодить очам, та тижнями автономної роботи.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="about" class="info-section">
+            <h2>Про нас</h2>
+            <p>SmartSpace — магазин сучасної електроніки та гаджетів. Наша мета — робити технології доступними.</p>
+        </section>
+        
+        <section id="contacts" class="info-section">
+            <h2>Контакти</h2>
+            <address class="contact-details">
+                <p>Електронна пошта: <a href="mailto:info@smartspace.ua">info@smartspace.ua</a></p>
+                <p>Телефон: <a href="tel:+380501234567">+38 (050) 123-45-67</a></p>
+                <p>Адреса: м. Суми, вул. Покровська, 3</p>
+            </address>
+        </section>
+    </main>
+
+    <hr>
+        
+    <footer class="site-footer">
+        <p><small>&copy; 2026 SmartSpace. Розроблено: студент Нестеренко Олександр.</small></p>
+    </footer>
+
+</body>
+</html>
