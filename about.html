@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про проєкт – SmartSpace</title>
+    <meta name="description" content="Інформація про навчальний проєкт SmartSpace, інструкція користувача та майбутні оновлення.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header id="top-header" class="site-header">
+        <p>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Логотип SmartSpace" width="40" height="40">
+                <strong>SmartSpace</strong>
+            </a>
+        </p>
+        
+        <nav aria-label="Основна навігація" class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Каталог</a></li>
+                <li class="nav-item"><a href="about.html" aria-current="page">Про проєкт</a></li>
+                <li class="nav-item"><a href="index.html#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <form id="search-form" class="search-form" action="index.html">
+            <label for="search-input">Пошук пристрою:</label>
+            <input type="search" id="search-input" class="search-input" name="q" placeholder="Пошук...">
+            <button type="submit" class="btn btn-search">Знайти</button>
+        </form>
+    </header>
+
+    <hr>
+
+    <main class="main-content">
+        
+        <nav aria-label="Хлібні крихти" class="breadcrumbs">
+            <ol>
+                <li><a href="index.html">Каталог</a></li>
+                <li aria-current="page">Про проєкт</li>
+            </ol>
+        </nav>
+
+        <h1 class="page-title">Про навчальний проєкт SmartSpace</h1>
+        
+        <p><strong>SmartSpace</strong> — це сучасний електронний каталог інноваційних гаджетів. Головна мета нашого ресурсу — надати користувачам зручний інструмент для пошуку, порівняння та вибору найактуальніших технологічних новинок. Ми прагнемо зробити світ сучасної електроніки доступним, а процес вибору техніки максимально простим та приємним для кожного клієнта.</p>
+
+        <hr>
+
+        <section aria-labelledby="instructions-title">
+            <h2 id="instructions-title">Як користуватися каталогом</h2>
+            <ol>
+                <li>Перейдіть на сторінку "Каталог" за допомогою навігаційного меню вгорі сторінки.</li>
+                <li>Скористайтеся формою пошуку для швидкого знаходження потрібного пристрою або знайдіть його у загальному списку.</li>
+                <li>Натисніть на назву товару, щоб відкрити сторінку з його детальними характеристиками та описом.</li>
+                <li>Ознайомтеся з технічними специфікаціями, зовнішнім виглядом та доступними модифікаціями на сторінці деталей.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section aria-labelledby="features-title">
+            <h2 id="features-title">Можливості, що з'являться в наступних роботах</h2>
+            <ul>
+                <li>Візуальне оформлення дизайну за допомогою каскадних таблиць стилів (CSS).</li>
+                <li>Створення гнучкої та адаптивної сітки товарів для зручного перегляду на мобільних пристроях.</li>
+                <li>Додавання інтерактивності (кошик, динамічне сортування товарів) за допомогою JavaScript.</li>
+                <li>Підключення сучасних вебшрифтів та іконок для покращення користувацького інтерфейсу.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section aria-labelledby="video-title">
+            <h2 id="video-title">Відеопрезентація проєкту</h2>
+            <figure>
+                <video controls width="600" preload="metadata">
+                    <source src="media/promo.mp4" type="video/mp4">
+                    <source src="media/promo.webm" type="video/webm">
+                    <track src="media/subtitles.vtt" kind="subtitles" srclang="uk" label="Українська" default>
+                    <p>Ваш браузер не підтримує відтворення відео. Ви можете <a href="media/promo.mp4">завантажити відеофайл</a>.</p>
+                </video>
+                <figcaption>Короткий відеоогляд концепції нашого інтернет-магазину.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section aria-labelledby="faq-title">
+            <h2 id="faq-title">Часті запитання (FAQ)</h2>
+            
+            <details name="faq">
+                <summary>Хто розробив цей каталог?</summary>
+                <p>Цей вебсайт розроблено студентом в рамках виконання практичної роботи з дисципліни "Клієнтські технології Web-програмування".</p>
+            </details>
+            
+            <details name="faq">
+                <summary>Чи можна тут придбати реальні товари?</summary>
+                <p>Ні, це виключно навчальний проєкт. Усі ціни, товари та описи наведені як приклади.</p>
+            </details>
+            
+            <details name="faq">
+                <summary>Які технології використовуються на цьому етапі?</summary>
+                <p>Наразі проєкт побудовано виключно на чистому HTML5 без використання стилів та скриптів.</p>
+            </details>
+        </section>
+
+        <hr>
+
+        <section id="developer-contacts" aria-labelledby="dev-contacts-title">
+            <h2 id="dev-contacts-title">Контакти розробника</h2>
+            <address>
+                <p>Автор проєкту: Нестеренко Олександр, студент спеціальності "Комп'ютерні науки".</p>
+                <p>Навчальний заклад: Сумський державний університет (СумДУ).</p>
+                <p>Електронна пошта для зв'язку: <a href="mailto:info@smartspace.ua">info@smartspace.ua</a></p>
+            </address>
+        </section>
+
+    </main>
+
+    <hr>
+        
+    <footer class="site-footer">
+        <p>Email для зв'язку: <a href="mailto:info@smartspace.ua">info@smartspace.ua</a></p>
+        <p><small>&copy; 2026 SmartSpace. Розроблено: студент Нестеренко Олександр.</small></p>
+    </footer>
+
+</body>
+</html>
